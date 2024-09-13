@@ -1,0 +1,6 @@
+.hide-completed .is-completed{
+    display: none!important;
+}
+.hide-todo .todo:not(.is-completed){
+    display: none!important;
+}
