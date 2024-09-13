@@ -30,15 +30,20 @@ export class TodoList {
      * @param {HTMLElement} element
      */
     appendTo(element) {
-        element.innerHTML = `<form class="d-flex pb-4">
-                <input required="" class="form-control" type="text" placeholder="Acheter des patates..." name="title" data-com.bitwarden.browser.user-edited="yes">
+        element.innerHTML = `
+            <h2>Bienvenue sur la TodoList</h2>
+            <p>Cette application vous permet de gérer vos tâches avec plus de souplesse et de pratique.</p>
+            <form class="d-flex pb-4">
+                <input required="" class="form-control" type="text" placeholder="Tâche à faire..." name="title" data-com.bitwarden.browser.user-edited="yes">
                 <button class="btn btn-primary">Ajouter</button>
             </form>
             <main>
-                <div class="btn-group mb-4" role="group">
-                    <button type="button" class=" btn btn-outline-primary active" data-filter="all">Toutes</button>
-                    <button type="button" class=" btn btn-outline-primary" data-filter="todo">A faire</button>
-                    <button type="button" class=" btn btn-outline-primary" data-filter="done">Faites</button>
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">Toutes</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="todo">À faire</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="done">Faites</button>
+                    </div>
                 </div>
 
                 <ul class="list-group"> 
